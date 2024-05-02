@@ -1,6 +1,8 @@
 package conjuntoTDA;
 
-public class conjunto implements conjuntoTDA{
+public class Conjunto implements ConjuntoTDA {
+  
+
   int [] a; //declaro  el arreglo para almacenar el conjunto
   int cantidad; //cantidad de elementos en el conjunto
 

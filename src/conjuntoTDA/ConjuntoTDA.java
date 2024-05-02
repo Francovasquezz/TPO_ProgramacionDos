@@ -1,6 +1,6 @@
 package conjuntoTDA;
 
-public interface conjuntoTDA {
+public interface ConjuntoTDA {
   void InicializarConjunto(); //sin precondiciones, inicializa el conjunto
   boolean Pertenece(int x); // conjunto inicializado, devuelve True si pertenece al conjunto
   void Agregar(int x); // conjunto inicializado, agrega un elemento  al conjunto 
