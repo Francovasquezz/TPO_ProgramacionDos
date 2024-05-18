@@ -51,7 +51,7 @@ public class ColaPrioridad implements ColaTDA{
     }
 }
 
-/*COSTOS DE LAS OPERACIONES
+/*ANALISIS DE COSTO
 
 - InicializarCola(): O(1)
 La inicializacion de un arreglo de tamaño fijo y la asignación de un valor a una variable son operaciones constantes.
