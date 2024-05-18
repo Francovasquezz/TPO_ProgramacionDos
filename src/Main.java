@@ -83,3 +83,25 @@ public class Main {
         }
     }
 }
+
+/*ANALISIS DE COSTO
+
+-Inicialización de Conjuntos y Colas = O(1)
+Cada llamada a InicializarConjunto() y InicializarCola() es una operación constante O(1), ya que simplemente asignan memoria y establecen variables iniciales.
+
+-Acolar elementos en la cola = O(n)
+Tiene un costo O(n) en el peor caso porque puede necesitar desplazar todos los elementos en la cola para mantener el orden de prioridad.
+
+-Copiar la cola original a la cola de copia = O(n^2) 
+El bucle se ejecuta 15 veces, y cada vez se llama a AcolarPrioridad() en copiaCola, lo que toma O(n) tiempo cada vez. 
+Por lo tanto, el costo total para esta sección es O(n^2) en el peor caso debido a las 15 iteraciones y el desplazamiento potencial de elementos en cada llamada a AcolarPrioridad().
+
+-Distribuir elementos de copiaCola en los conjuntos = O(n^2) 
+El bucle se ejecuta 15 veces, y cada vez se llama a Agregar(), que toma O(n) tiempo cada vez. 
+Por lo tanto, el costo total para esta sección es O(n^2) en el peor caso.
+
+-Imprimir los elementos de cada conjunto = O(n^2) 
+Cada bucle se ejecuta hasta que el conjunto esté vacío, lo cual puede tomar hasta n iteraciones en el peor caso. 
+Sacar() toma O(n) tiempo cada vez, resultando en un costo total de O(n^2) para cada conjunto.
+
+*/
