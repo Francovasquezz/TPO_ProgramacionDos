@@ -50,3 +50,24 @@ public class ColaPrioridad implements ColaTDA{
         return elementos[indice-1].prioridad;
     }
 }
+
+/*COSTOS DE LAS OPERACIONES
+
+- InicializarCola(): O(1)
+La inicializacion de un arreglo de tamaño fijo y la asignación de un valor a una variable son operaciones constantes.
+
+- AcolarPrioridad(int x, int prioridad): O(n)
+La inserción de un elemento en la cola requiere desplazar otros elementos para mantener el orden de prioridad, lo que en el peor caso implica mover todos los elementos ya presentes.
+
+-Desacolar(): O(1)
+Simplemente eliminar el último elemento en la cola es una operación constante, ya que no requiere reordenar ni desplazar elementos.
+
+-Primero(): O(1)
+Acceder al valor del último elemento en el arreglo es una operación constante.
+
+- ColaVacia(): O(1)
+La comprobación de si un arreglo está vacío es una operación constante.
+
+- Prioridad(): O(1)
+Acceder al valor de la prioridad del último elemento en el arreglo es una operación constante.
+ */
